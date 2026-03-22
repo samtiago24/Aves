@@ -1,17 +1,24 @@
-# Carpetas de imágenes (Fotos procesadas)
+# --- CARPETAS DE AVES (Imágenes pesadas) ---
+# Pon un # al principio de la que quieras subir HOY
+
 Avefría teroCSV/
-Baltimore Oriole/
+#Baltimore Oriole/
+Bienteveo Común/
 Canario conorado/
-Capuchino Tricolor/
 Colibrí Cola Canela/
 Fiofío Silbón/
 Garza dedos dorados/
+Jacana/
+Luis Pico Grueso/
+Papamoscas rayado chico/
+Saltador garganta ocre/
 Saltador Gris/
 Tangara Azulgrís/
 Torcaza Colorada/
+Vireo Ojos Rojos/
 Zorzal sabia/
 
-# Modelo de IA y archivos de sistema
+# --- ARCHIVOS DE SISTEMA E IA ---
 yolov8n.pt
 __pycache__/
 .DS_Store
