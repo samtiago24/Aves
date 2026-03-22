@@ -4,7 +4,7 @@ import os
 import numpy as np
 
 
-def crop_birds_ultralytics(input_dir, output_dir='Capuchino_Tricolor_Recortado', conf=0.3):
+def crop_birds_ultralytics(input_dir, output_dir='Tangara Azulgrís_recortado', conf=0.3):
     input_path = os.path.abspath(input_dir)
     if not os.path.exists(input_path):
         print(f"❌ Carpeta no encontrada: {input_path}")
@@ -50,16 +50,16 @@ def crop_birds_ultralytics(input_dir, output_dir='Capuchino_Tricolor_Recortado',
                 min(img.height, y2 + pad_h)
             )
 
-            cropped = img.crop(crop_box).resize((512, 512))
+            cropped = img.crop(crop_box).resize((224, 224))
             cropped = cropped.convert('RGB')  # ← Fix RGBA/PNG transparencia
-            out_name = f"Capuchino_Tricolor_{processed:04d}_{fname.split('.')[0]}.jpg"
+            out_name = f"Tangara Azulgrís_{processed:04d}_{fname.split('.')[0]}.jpg"
             cropped.save(os.path.join(output_dir, out_name), quality=95)
             print(f"✓ {fname}: score={bird_scores[bird_idx]:.2f}, size={w:.0f}x{h:.0f}px")
             processed += 1
 
-    print(f"¡{processed} saltadores guardados en {output_dir}!")
+    print(f"¡{processed} tangaras azulgrises guardados en {output_dir}!")
 
 
 # Uso
-input_folder = "Capuchino_TricolorCsv"
+input_folder = "Tangara AzulgrísCsv"
 crop_birds_ultralytics(input_folder)

@@ -1,0 +1,17 @@
+# Carpetas de imágenes (Fotos procesadas)
+Avefría teroCSV/
+Baltimore Oriole/
+Canario conorado/
+Capuchino Tricolor/
+Colibrí Cola Canela/
+Fiofío Silbón/
+Garza dedos dorados/
+Saltador Gris/
+Tangara Azulgrís/
+Torcaza Colorada/
+Zorzal sabia/
+
+# Modelo de IA y archivos de sistema
+yolov8n.pt
+__pycache__/
+.DS_Store
